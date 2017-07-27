@@ -15,13 +15,19 @@ abstract class Controller
      * Поточний вид
      * @var string
      */
-    public $view = [];
+    public $view;
 
     /**
      * Поточний лайаут
      * @var string
      */
-    public $layout = [];
+    public $layout;
+
+    /**
+     * Данні з контроллера
+     * @var array
+     */
+    public $vars = [];
 
     public function __construct($route)
     {
@@ -32,8 +38,13 @@ abstract class Controller
     public function getView()
     {
         $vObj = new View($this->route, $this->layout, $this->view);
-        $vObj->render();
+        $vObj->render($this->vars);
 
+    }
+
+    public function set($vars)
+    {
+        $this->vars = $vars;
     }
 
 }

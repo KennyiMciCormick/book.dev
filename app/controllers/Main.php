@@ -2,10 +2,15 @@
 
 namespace app\controllers;
 
-class Main
+class Main extends App
 {
+//    public $layout = 'main';
+
     public function indexAction()
     {
-        echo 'Main:constr';
+//        echo 'dsfsdf';
+//        $this->layout = false;
+//        $this->view = 'test';
+        $this->set(['name' => 'LOH', 'gg' => 'QQ']);
     }
 }
