@@ -5,8 +5,8 @@ use \R;
 
 class Db
 {
+    use SingletonTrait;
     protected $pdo;
-    protected static $instance;
 
     /**
      * Для дебагу, скіки було запитів
@@ -45,14 +45,7 @@ class Db
 //        $this->pdo = new \PDO($db['dsn'], $db['user'], $db['pass'], $options);
     }
 
-//singleton шаблон проектування - клас має тільки один екземпляр!
-    public static function instance()
-    {
-        if (self::$instance === null) {
-            self::$instance = new self();
-        }
-        return self::$instance;
-    }
+
 
 
 

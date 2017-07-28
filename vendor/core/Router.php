@@ -34,6 +34,12 @@ class Router
                 if (!isset($route['action'])) {
                     $route['action'] = 'index';
                 }
+//                prefix for admin
+                if(!isset($route['prefix'])){
+                    $route['prefix'] = '';
+                } else {
+                    $route['prefix'] .= '\\';
+                }
                 $route['controller'] = self::upperCamelCase($route['controller']);
                 $route['action'] = self::lowerCamelCase($route['action']);
                 self::$route = $route;
@@ -49,22 +55,22 @@ class Router
     {
         $url = self::removeQueryString($url);
         if (self::matchRoute($url)) {
-            $controller = 'app\controllers\\' . self::$route['controller'].'Controller';
+            $controller = 'app\controllers\\' .self::$route['prefix']. self::$route['controller'].'Controller';
             if (class_exists($controller)) {
                 $cObj = new $controller(self::$route);
-                $action = self::$route['action'] . 'Action';
+                $action = self::$route['action'];
                 if (method_exists($cObj, $action)) {
                     $cObj->$action();
                     $cObj->getView();
                 } else {
-                    echo "Метод <b>$controller : $action</b> не знайдено";
+                    throw new \Exception("Метод <b>$controller : $action</b> не знайдено", 404);
+//                    echo "Метод <b>$controller : $action</b> не знайдено";
                 }
             } else {
-                echo "Контроллер <b>$controller</b> не знайдено";
+                throw new \Exception("Контроллер <b>$controller</b> не знайдено", 404);
             }
         } else {
-            http_response_code(404);
-            include '404.html';
+            throw new \Exception("Сторінка не знайдена", 404);
         }
     }
 

@@ -1,0 +1,78 @@
+[2017-07-29 00:01:02] Текст помилки: syntax error, unexpected 'echo' (T_ECHO) | Файл: C:\OpenServer\domains\book.dev\app\controllers\MainController.php, | Рядок: 47
+==========================
+[2017-07-29 00:01:02] Текст помилки: Use of undefined constant DEBUG - assumed 'DEBUG' | Файл: C:\OpenServer\domains\book.dev\vendor\core\ErrorHandler.php, | Рядок: 57
+==========================
+[2017-07-29 00:02:40] Текст помилки: syntax error, unexpected '}' | Файл: C:\OpenServer\domains\book.dev\app\controllers\MainController.php, | Рядок: 39
+==========================
+[2017-07-29 00:02:41] Текст помилки: syntax error, unexpected '}' | Файл: C:\OpenServer\domains\book.dev\app\controllers\MainController.php, | Рядок: 39
+==========================
+[2017-07-29 00:19:42] Текст помилки: Контроллер <b>app\controllers\admin\LoginController</b> не знайдено | Файл: C:\OpenServer\domains\book.dev\vendor\core\Router.php, | Рядок: 70
+==========================
+[2017-07-29 00:19:53] Текст помилки: Метод <b>app\controllers\admin\AdminsController : loginAction</b> не знайдено | Файл: C:\OpenServer\domains\book.dev\vendor\core\Router.php, | Рядок: 66
+==========================
+[2017-07-29 00:20:17] Текст помилки: Метод <b>app\controllers\admin\AdminsController : loginAction</b> не знайдено | Файл: C:\OpenServer\domains\book.dev\vendor\core\Router.php, | Рядок: 66
+==========================
+[2017-07-29 00:20:19] Текст помилки: Call to undefined method app\controllers\admin\AdminsController::getView() | Файл: C:\OpenServer\domains\book.dev\vendor\core\Router.php, | Рядок: 64
+==========================
+[2017-07-29 00:21:22] Текст помилки: Call to undefined method app\controllers\admin\AdminsController::getView() | Файл: C:\OpenServer\domains\book.dev\vendor\core\Router.php, | Рядок: 64
+==========================
+[2017-07-29 00:21:49] Текст помилки: <p>Нема в'юшки..( C:\OpenServer\domains\book.dev/app/views/admin\Admins/login.php</p> | Файл: C:\OpenServer\domains\book.dev\vendor\core\base\View.php, | Рядок: 54
+==========================
+[2017-07-29 00:21:50] Текст помилки: <p>Нема в'юшки..( C:\OpenServer\domains\book.dev/app/views/admin\Admins/login.php</p> | Файл: C:\OpenServer\domains\book.dev\vendor\core\base\View.php, | Рядок: 54
+==========================
+[2017-07-29 00:22:20] Текст помилки: <p>Нема шаблону..( C:\OpenServer\domains\book.dev/app/views/layouts/admin.php</p> | Файл: C:\OpenServer\domains\book.dev\vendor\core\base\View.php, | Рядок: 62
+==========================
+[2017-07-29 00:22:41] Текст помилки: <p>Нема шаблону..( C:\OpenServer\domains\book.dev/app/views/layouts/admin.php</p> | Файл: C:\OpenServer\domains\book.dev\vendor\core\base\View.php, | Рядок: 62
+==========================
+[2017-07-29 00:48:06] Текст помилки: Undefined property: app\controllers\admin\AdminsController::$Flash | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AdminsController.php, | Рядок: 23
+==========================
+[2017-07-29 00:48:23] Текст помилки: Undefined property: app\controllers\admin\AdminsController::$Flash | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AdminsController.php, | Рядок: 23
+==========================
+[2017-07-29 01:41:57] Текст помилки: Метод <b>app\controllers\MainController : index</b> не знайдено | Файл: C:\OpenServer\domains\book.dev\vendor\core\Router.php, | Рядок: 66
+==========================
+[2017-07-29 01:42:23] Текст помилки: Метод <b>app\controllers\MainController : index</b> не знайдено | Файл: C:\OpenServer\domains\book.dev\vendor\core\Router.php, | Рядок: 66
+==========================
+[2017-07-29 02:20:15] Текст помилки: <p>Нема в'юшки..( C:\OpenServer\domains\book.dev/app/views/admin\Admins/test.php</p> | Файл: C:\OpenServer\domains\book.dev\vendor\core\base\View.php, | Рядок: 54
+==========================
+[2017-07-29 02:23:20] Текст помилки: require_once(C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php): failed to open stream: Permission denied | Файл: C:\OpenServer\domains\book.dev\www\index.php, | Рядок: 19
+==========================
+[2017-07-29 02:28:01] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 31
+==========================
+[2017-07-29 02:28:02] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 31
+==========================
+[2017-07-29 02:28:17] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 31
+==========================
+[2017-07-29 02:28:18] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 32
+==========================
+[2017-07-29 02:28:19] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 32
+==========================
+[2017-07-29 02:28:20] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 32
+==========================
+[2017-07-29 02:28:31] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 32
+==========================
+[2017-07-29 02:28:32] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 32
+==========================
+[2017-07-29 02:29:03] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 31
+==========================
+[2017-07-29 02:30:17] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 30
+==========================
+[2017-07-29 02:30:18] Текст помилки: Нема доступу | Файл: C:\OpenServer\domains\book.dev\app\controllers\admin\AppController.php, | Рядок: 30
+==========================
+[2017-07-29 02:32:59] Текст помилки: Undefined index: admin | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 14
+==========================
+[2017-07-29 02:33:00] Текст помилки: Undefined index: admin | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 14
+==========================
+[2017-07-29 02:33:43] Текст помилки: Undefined index: admin | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 14
+==========================
+[2017-07-29 02:33:47] Текст помилки: Undefined index: admin | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 14
+==========================
+[2017-07-29 02:34:32] Текст помилки: Undefined index: admin | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 14
+==========================
+[2017-07-29 02:35:01] Текст помилки: setcookie() expects parameter 2 to be string, array given | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 9
+==========================
+[2017-07-29 02:37:05] Текст помилки: Undefined index: admin | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 14
+==========================
+[2017-07-29 02:37:06] Текст помилки: Undefined index: admin | Файл: C:\OpenServer\domains\book.dev\app\traits\CookieTrait.php, | Рядок: 14
+==========================
+[2017-07-29 02:38:21] Текст помилки: A session had already been started - ignoring session_start() | Файл: C:\OpenServer\domains\book.dev\app\controllers\MainController.php, | Рядок: 15
+==========================

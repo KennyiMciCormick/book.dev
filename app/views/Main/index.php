@@ -1,13 +1,26 @@
 <div class="container">
-    <?= $post ?>
-    <?= $meta['title'] ?>
+    <button class="btn btn-default" id="send">AJAX</button>
+    <?php if(!empty($admin) && $admin){ ?>
+        <a href="/admin/logout" class="btn btn-default" >Вийти</a>
+    <?php } ?>
 
     <ul>
-        <?php if (!empty($posts)) { ?>
-            <?php foreach ($posts as $post) { ?>
-                <li><?= $post['title'] ?></li>
-            <?php }
-        } ?>
 
     </ul>
 </div>
+
+<script>
+    $('#send').click(function () {
+        $.ajax({
+            type: "POST",
+            url: '/main/test-ajax',
+            data: {id: 2},
+            success: function (response) {
+                console.log(response);
+            },
+            eroor: function () {
+                alert('ERROR');
+            }
+        });
+    })
+</script>

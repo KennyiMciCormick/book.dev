@@ -1,5 +1,4 @@
 <?php
-error_reporting(-1);
 use vendor\core\Router;
 
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
@@ -11,6 +10,7 @@ define('LIBS', dirname(__DIR__) . '/vendor/libs');
 define('APP', dirname(__DIR__) . '/app');
 define('CACHE', dirname(__DIR__) . '/tmp/cache');
 define('LAYOUT', 'default');
+define('DEBUG', 1);
 require '../vendor/libs/functions.php';
 
 spl_autoload_register(function ($class) {
@@ -27,6 +27,12 @@ Router::add('^page/(?P<alias>[a-z-]+)$', ['controller' => 'Page', 'action' => 'v
 
 
 //    default
+Router::add('^admin$', ['controller' => 'Admins', 'action' => 'login', 'prefix' => 'admin']);
+Router::add('^admin/?(?P<action>[a-z-]+)', ['controller' => 'Admins', 'prefix' => 'admin']);
+Router::add('^admin/?(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$', ['prefix' => 'admin']);
+
+
+
 Router::add('^$', ['controller' => 'Main', 'action' => 'index']);
 Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
 

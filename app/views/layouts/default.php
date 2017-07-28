@@ -14,11 +14,13 @@
 <h1>Hello, WORLD!</h1>
 <?= $content ?>
 
-<?= debug(\vendor\core\Db::$countSql);?>
-<?= debug(\vendor\core\Db::$queries);?>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+
+
 </body>
 </html>

@@ -29,6 +29,8 @@ class View
      */
     public $layout = [];
 
+    public static  $meta = [''];
+
     public function __construct($route, $layout = '', $view = '')
     {
         $this->route = $route;
@@ -44,12 +46,12 @@ class View
     {
        if(is_array($vars)){ extract($vars); };
         if ($this->layout !== false) {
-            $file_view = APP . "/views/{$this->route['controller']}/{$this->view}.php";
+            $file_view = APP . "/views/{$this->route['prefix']}{$this->route['controller']}/{$this->view}.php";
             ob_start();
             if (is_file($file_view)) {
                 require $file_view;
             } else {
-                echo '<p>Нема в\'юшки..( ' . $file_view . '</p>';
+                throw new \Exception('<p>Нема в\'юшки..( ' . $file_view . '</p>', 404);
             }
             $content = ob_get_clean();
 
@@ -57,7 +59,7 @@ class View
             if (is_file($file_layout)) {
                 require $file_layout;
             } else {
-                echo '<p>Нема шаблону..( ' . $file_layout . '</p>';
+                throw new \Exception('<p>Нема шаблону..( ' . $file_layout . '</p>', 404);
             }
         }
     }
